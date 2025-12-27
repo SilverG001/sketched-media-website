@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketched Media</title>
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Icon Font (Material Icons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome for additional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS overrides (must be after Materialize CSS) -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="loader-wrapper" id="loader-wrapper">
+    <div class="loading-logo">
+        <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stylized 'S' as a lens aperture -->
+            <g fill="none" stroke="#e4c590" stroke-width="2">
+                <circle cx="25" cy="30" r="18"/>
+                <path d="M25 12 L25 48 M10 30 L40 30" stroke-width="1"/>
+                <!-- Abstract 'S' within the circle -->
+                <path d="M35 22 C38 15, 20 15, 15 25 S 15 45, 25 38 S 35 45, 30 35" stroke-width="2"/>
+            </g>
+
+            <!-- "SKETCHED" text -->
+            <text x="50" y="32" font-family="Montserrat, sans-serif" font-weight="bold" font-size="22" fill="#e4c590">SKETCHED</text>
+            <!-- "MEDIA" text -->
+            <text x="50" y="48" font-family="Montserrat, sans-serif" font-weight="normal" font-size="12" fill="#e4c590">MEDIA</text>
+        </svg>
+    </div>
+</div>
+
+    <!-- Header will be dynamically loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main content will be dynamically loaded here -->
+    <main id="main-content"></main>
+
+    <!-- Footer will be dynamically loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Materialize JavaScript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript for routing and dynamic content -->
+    <script src="js/main.js"></script>
+</body>
+</html>

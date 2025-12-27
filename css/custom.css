@@ -1,0 +1,173 @@
+/* Sketched Media - Custom Stylesheets */
+/* This file contains project-specific styles and overrides for Materialize CSS */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    --primary-color: #1a1a1a; /* Dark grey */
+    --secondary-color: #0a0a0a; /* Near black */
+    --accent-color: #e4c590; /* Muted gold/tan */
+    --text-color: #f4f4f4;
+    --text-muted: #888;
+    --font-primary: 'Roboto', sans-serif;
+    --font-display: 'Montserrat', serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 64px; /* Account for fixed Materialize navbar height */
+}
+
+/* General Link Styling */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #fff;
+}
+
+/* Materialize Overrides for Text/Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--accent-color);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+p {
+    color: var(--text-color);
+}
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+
+/* --- Header & Navigation (Materialize Nav overrides) --- */
+nav.main-header { /* Target the nav element which has main-header class */
+    background: rgba(10, 10, 10, 0.7) !important; /* Keep background from original design */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #222;
+    padding: 0;
+}
+.logo {
+    font-family: var(--font-display);
+    font-size: 1.8rem !important; /* Ensure specific font size */
+    font-weight: bold;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+.logo a {
+    color: inherit;
+}
+.sidenav {
+    background-color: var(--primary-color);
+}
+.sidenav li>a {
+    color: var(--text-color);
+}
+.sidenav li>a.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+
+/* Custom button style to maintain original aesthetic */
+.cta-button {
+    /* Use Materialize classes for basic styling, override colors */
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+    padding: 12px 20px !important; /* Slightly reduce horizontal padding if needed after flex */
+    margin-top: 1.5rem !important;
+    border-radius: 5px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    display: flex; /* Use flexbox to center content horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the button itself as a block element */
+    max-width: fit-content; /* Make sure it doesn't stretch */
+}
+
+.cta-button:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+/* --- Homepage Hero Section --- */
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide the overflowing parts of the animated background */
+    background: url('../assets/placeholder_bg.jpg') no-repeat center center; /* Path relative to custom.css */
+    background-size: cover;
+    background-position: center center; /* Ensure Ken Burns starts from center */
+    animation: ken-burns 40s infinite;
+}
+
+/* --- Global section styling for spacing --- */
+.section {
+    margin-bottom: 3rem; /* Add consistent bottom margin for sections */
+}
+
+
+/* --- Footer --- */
+.main-footer {
+    background-color: var(--primary-color);
+    text-align: center; /* Center the footer text */
+    padding: 2rem 0;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* --- Loading Screen Styles --- */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--secondary-color); /* Matches body background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Smooth fade-out */
+}
+
+#loader-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-logo svg {
+    width: 180px; /* Slightly larger for emphasis */
+    height: auto;
+    animation: pulse-light 2s infinite alternate; /* Apply pulsating animation */
+}
+
+@keyframes pulse-light {
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 8px var(--accent-color)); /* Glow effect */
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "projects": {
+    "1": {
+      "title": "Echoes of Tomorrow",
+      "tagline": "A journey beyond time.",
+      "category": "Short Film | 2024",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A sci-fi short film exploring the consequences of time travel. When a young scientist discovers a way to send messages to the past, she inadvertently unravels the fabric of her own existence.",
+      "credits": {
+        "Director": "Jane Doe",
+        "Director of Photography": "John Smith",
+        "Editor": "Emily White",
+        "Sound Design": "Chris Green"
+      }
+    },
+    "2": {
+      "title": "Crimson Peak",
+      "tagline": "Fear has a new color.",
+      "category": "Music Video | 2024",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A visually rich music video for the indie band \"The Wanderers\". The video tells a gothic horror story set in a desolate, abandoned mansion, mirroring the song's haunting lyrics.",
+      "credits": {
+        "Director": "Mark Johnson",
+        "Artist": "The Wanderers",
+        "Producer": "Sarah Brown"
+      }
+    },
+    "3": {
+      "title": "Momentum",
+      "tagline": "Experience the speed of light.",
+      "category": "Commercial | 2023",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A high-energy commercial for a new electric sports car. We used cutting-edge FPV drones and high-speed cameras to capture the vehicle's power and agility.",
+      "credits": {
+        "Client": "Apex Motors",
+        "Director": "Alex Williams",
+        "Agency": "Creative Drive"
+      }
+    },
+    "4": {
+      "title": "The Wild Within",
+      "tagline": "Nature's last stand.",
+      "category": "Documentary | 2023",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A feature documentary following a team of conservationists as they track and protect endangered species in the Amazon rainforest. A story of hope, struggle, and the future of our planet.",
+      "credits": {
+        "Narrator": "David Attenborough (Placeholder)",
+        "Field Producer": "Maria Garcia",
+        "Editor": "Kevin Lee"
+      }
+    },
+    "5": {
+      "title": "Starlight",
+      "tagline": "A love written in the stars.",
+      "category": "Feature Film | 2022",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A romantic drama about two astronomers who fall in love while on the verge of a groundbreaking discovery. Their personal and professional lives collide as they face an impossible choice.",
+      "credits": {
+        "Director": "Steven Spielberg (Placeholder)",
+        "Writer": "Nora Ephron (Placeholder)",
+        "Stars": "Tom Hanks & Meg Ryan (Placeholders)"
+      }
+    },
+    "6": {
+      "title": "The Artisan",
+      "tagline": "Handcrafted with passion.",
+      "category": "Brand Film | 2022",
+      "image": "placeholder.png",
+      "video_id": "dQw4w9WgXcQ",
+      "description": "A short brand film for a luxury watchmaker, focusing on the meticulous craftsmanship and dedication that goes into every single timepiece.",
+      "credits": {
+        "Client": "Horology Inc.",
+        "Director": "Sofia Coppola (Placeholder)"
+      }
+    }
+  },
+  "showreels": [
+    {
+      "title": "CHANZO",
+      "description": "A compelling production film.",
+      "video_id": "6R57ZPdtWFg"
+    },
+    {
+      "title": "MMJINI MBEYA",
+      "description": "A visually compelling production film.",
+      "video_id": "jpKlz8q4ppg"
+    },
+    {
+      "title": "STRUGGLES OF HOUSE MANAGERS",
+      "description": "A short documentary film exploring the daily struggles faced by house managers.",
+      "video_id": "hSoCKmMalo8"
+    }
+  ]
+}
